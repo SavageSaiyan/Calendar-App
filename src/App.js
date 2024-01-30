@@ -41,9 +41,6 @@ const events = [
 ];
 
 function App() {
-
-
-
   const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
   const [allEvents, setAllEvents] = useState(events);
 
