@@ -8,6 +8,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import DarkMode from "./DarkMode/DarkMode";
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -40,6 +41,9 @@ const events = [
 ];
 
 function App() {
+
+<DarkMode />
+
   const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
   const [allEvents, setAllEvents] = useState(events);
 
