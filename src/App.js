@@ -42,7 +42,7 @@ const events = [
 
 function App() {
 
-<DarkMode />
+
 
   const [newEvent, setNewEvent] = useState({ title: "", start: "", end: "" });
   const [allEvents, setAllEvents] = useState(events);
@@ -55,6 +55,7 @@ function App() {
     <div className="App">
       <h1>Calendar</h1>
       <h2>Add New Event</h2>
+      <DarkMode />
       <div>
         <input
           type="text"
